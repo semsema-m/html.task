@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="icon" href="path/to/favicon.ico">
+    <style>
+        body {
+            background-color: #eaeaea;
+        }
+
+
+        h1 {
+            font-family: Arial, sans-serif;
+            color: blue;
+            text-align: center;
+        }
+
+        .welcome-image {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .personal-info {
+            float: left;
+            width: 50%;
+        }
+
+        .personal-photo {
+            float: right;
+            width: 50%;
+        }
+
+        .about-me {
+            margin-top: 20px;
+            height: 200px;
+            overflow-y: scroll;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .social-media-link {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Welcome Page -->
+    <div id="welcome">
+        <h1>Welcome to My Personal Website</h1>
+        <img class="welcome-image" src="path/to/welcome-image.jpg" alt="Welcome Image">
+        <p style="font-family: Arial, sans-serif; color: red;">Welcome to my website! My name is salma mohamed </p>
+        <a href="Home.html">Go to Home Page</a>
+    </div>
+
+    <!-- Home Page -->
+
+    <div id="home">
+        <h1>my name is salma mohamed</h1>
+        <div class="personal-info">
+            <ul>
+                <li>Age: 19</li>
+                <li>Address: al-monofeya</li>
+                <li>Phones: 01008652057 </li>
+                <li><a href="https://www.yourfacultywebsite.com" target="_blank"> Delta Technological University for
+                        Industry and Energy</a></li>
+                <li>Graduation Year:2026</li>
+                <li>Hobbies: learn programming</li>
+            </ul>
+        </div>
+        <div class="personal-photo">
+            <img src="https://dtuedueg-my.sharepoint.com/:i:/g/personal/1223177_dtu_edu_eg/EdB7kIUe08NHr7LEpOmZzJwBkE8JMeIlfjFMX3bA1VnmrQ?e=lLeWbv.jpg"
+                alt="">
+        </div>
+        <div class="about-me">
+            <p>I am studying at Delta Technological University for Industry and Energy, learning web development courses
+            </p>
+        </div>
+        <hr>
+        <div class="footer">
+            <a href="#home">Home</a> |
+            <a href="About.html">About</a> |
+            <a href="Contact.html">Contact Me</a>
+        </div>
+        <div class="footer">
+            <a href="https://www.facebook.com" target="_blank"><img class="social-media-link"
+                    src="path/to/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social-media-link"
+                    src="path/to/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social-media-link"
+                    src="path/to/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <!-- About Page -->
+
+    <div id="about">
+        <h1>About Me</h1>
+        <p style="font-style: italic;">I am studying at<b> Delta Technological University for Industry and Energy</b>,
+            learning <b>web development</b> courses</p>
+    </div>
+
+    <!-- Welcome Page Background Sound -->
+
+    <audio autoplay>
+        <source src="path/to/background-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Welcome Page Full-page Background Image -->
+
+    <style>
+        #welcome {
+            background-image: url('https://www.w3schools.com/howto/img_fullscreen.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+    <!-- Home Page Video -->
+
+    <video src="path/to/video.mp4" type="video/mp4" controls></video>
+
+    <!-- Home Page Fullscreen Video Background -->
+
+    <style>
+        #home {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://www.w3schools.com/howto/img_fullscreen.jpg') center center / cover no-repeat;
+        }
+
+        #home video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+    </style>
+
+</body>
+
+</html>
